@@ -1,6 +1,6 @@
 # Setup
 
-Clone this repo and rename it like so: git@github.com:public-office/starter.git yourname. `cd` into the directory.
+Clone this repo and rename it like so: `git@github.com:public-office/starter.git yourname`. `cd` into the directory.
 
 Create a new repo on your account, don’t add a readme.md and grab the remote url when the screen come up. Paste it into terminal whilst in your directory. Should look something like `git remote add origin git@github.com:general-enquiry/new_name.git`
 
