@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+html {
+  font-size: 40px;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-family: sans-serif;
+  top: 0;
+}
+
+
+body {
+  font-size: 1rem;
+  font-family: sans-serif;
+  margin: 0.5em;
+  top: 0;
+}
+
+body:hover {
+  webkit-filter: blur(4px);
+}
+
+main {
+  width: 100%;
+}
+
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.name {
+  flex: 1;
+}
+
+.info {
+  text-align: right;
+  float: right;
+  right: 0;
+  top: 0;
+}
+
+.brief {
+  position: fixed;
+  font-size: 1rem;
+  left: 0.5em;
+  padding-top: 0.5em;
+  bottom: 0;
+}
+
+
+footer {
+  position: fixed;
+  font-size: 1rem;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
