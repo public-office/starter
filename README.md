@@ -1,82 +1,13 @@
-# Kirby Plainkit
+# Setup
 
-Kirby is a file-based CMS.
-Easy to setup. Easy to use. Flexible as hell.
+Clone this repo and rename it like so: git@github.com:public-office/starter.git yourname. `cd` into the directory.
 
-## Trial
+Make sure you have homebrew installed by running `brew help` in terminal. If you need to install it, run this in terminal `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"`.
 
-You can try Kirby on your local machine or on a test
-server as long as you need to make sure it is the right
-tool for your next project.
+Check if Node is installed. Run `node -v` in terminal. If it is not installed, follow this guide: https://changelog.com/posts/install-node-js-with-homebrew-on-os-x 
 
-## Buy a license
+Check if Yarn is installed. Run `yarn -v` in terminal. If it is not installed, run `brew install yarn` in terminal.
 
-You can purchase your Kirby license at
-<https://getkirby.com/buy>
+Then ... run `yarn install`. If all goes well it should install all the dependencies in a folder called `node_modules`. Check. If it's there and there are no errors, run `yarn run dev`. This will start listening for changes to css in the `src/scss/style.scss` file. This is sass, not regular css, but you can use that until you learn a little more :-)
 
-A Kirby license is valid for a single domain. You can find
-Kirby's license agreement here: <https://getkirby.com/license>
-
-## The Plainkit
-
-Kirby's Plainkit is the most minimal setup you can get started with.
-It does not include any content, styles or other kinds of decoration,
-so it's perfect to use this as a starting point for your own project.
-
-## The Panel
-
-You can find the login for Kirby's admin interface at
-http://yourdomain.com/panel. You will be guided through the signup
-process for your first user, when you visit the panel
-for the first time.
-
-## Installation
-
-Kirby does not require a database, which makes it very easy to
-install. Just copy Kirby's files to your server and visit the
-URL for your website in the browser.
-
-**Please check if the invisible .htaccess file has been
-copied to your server correctly**
-
-### Requirements
-
-Kirby runs on PHP 7.1+, Apache or Nginx.
-
-### Download
-
-You can download the latest version of the Plainkit
-from https://github.com/getkirby/plainkit/archive/master.zip
-
-### With Git
-
-If you are familiar with Git, you can clone Kirby's
-Plainkit repository from Github.
-
-    git clone https://github.com/getkirby/plainkit.git
-
-## Documentation
-
-<https://getkirby.com/docs>
-
-## Issues
-
-If you have a Github account, please report issues
-directly on Github: <https://github.com/getkirby/kirby/issues>
-
-Otherwise you can use Kirby's forum: https://forum.getkirby.com
-or send us an email: <support@getkirby.com>
-
-## Ideas & Feature Requests
-
-If you have ideas for new features, please submit a ticket in our ideas repository:
-<https://github.com/getkirby/kirby/ideas>
-
-## Support
-
-<https://getkirby.com/support>
-
-## Copyright
-
-© 2009-2019 Bastian Allgeier (Bastian Allgeier GmbH)
-<https://getkirby.com>
+Email me if you have any issues.
