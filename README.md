@@ -6,7 +6,7 @@ Create a new repo on your account, don’t add a readme.md and grab the remote u
 
 Make sure you have homebrew installed by running `brew help` in terminal. If you need to install it, run this in terminal `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"`.
 
-Check if Node is installed. Run `node -v` in terminal. If it is not installed, follow this guide: https://changelog.com/posts/install-node-js-with-homebrew-on-os-x 
+Check if Node is installed. Run `node -v` in terminal. If it is not installed, follow this guide: https://changelog.com/posts/install-node-js-with-homebrew-on-os-x
 
 Check if Yarn is installed. Run `yarn -v` in terminal. If it is not installed, run `brew install yarn` in terminal.
 
