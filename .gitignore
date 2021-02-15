@@ -47,5 +47,6 @@ Icon
 # ---------------
 /site/config/.license
 
+/content
 /dist
 /.cache
