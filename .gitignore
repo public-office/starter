@@ -9,13 +9,17 @@ Icon
 
 /media/*
 !/media/index.html
-/content/*
-node_modules
-*.zip
 
 # Lock files
 # ---------------
 .lock
+
+# Editors
+# ---------------
+*.sublime-project
+*.sublime-workspace
+/.vscode
+/.idea
 
 # -------------SECURITY-------------
 # NEVER publish these files via Git!
@@ -42,3 +46,6 @@ node_modules
 # License
 # ---------------
 /site/config/.license
+
+/dist
+/.cache

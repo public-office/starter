@@ -1,15 +1,34 @@
-# Setup
+<img src="http://getkirby.com/assets/images/github/plainkit.jpg" width="300">
 
-Clone this repo and rename it like so: `git@github.com:public-office/starter.git yourname`. `cd` into the directory.
 
-Create a new repo on your account, don’t add a readme.md and grab the remote url when the screen come up. Paste it into terminal whilst in your directory. Should look something like `git remote add origin git@github.com:public-office/new_name.git`
+**Kirby: the CMS that adapts to any project, loved by developers and editors alike.**  
+The Plainkit is a minimal Kirby setup with the basics you need to start a project from scratch. It is the ideal choice if you are already familiar with Kirby and want to start step-by-step.
 
-Make sure you have homebrew installed by running `brew help` in terminal. If you need to install it, run this in terminal `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"`.
+You can learn more about Kirby at [getkirby.com](https://getkirby.com).
 
-Check if Node is installed. Run `node -v` in terminal. If it is not installed, follow this guide: https://changelog.com/posts/install-node-js-with-homebrew-on-os-x
+### Try Kirby for free  
+You can try Kirby and the Plainkit on your local machine or on a test server as long as you need to make sure it is the right tool for your next project. … and when you’re convinced, [buy your license](https://getkirby.com/buy).
 
-Check if Yarn is installed. Run `yarn -v` in terminal. If it is not installed, run `brew install yarn` in terminal.
+### Get going
+Read our guide on [how to get started with Kirby](https://getkirby.com/docs/guide/quickstart).
 
-Then ... run `yarn install`. If all goes well it should install all the dependencies in a folder called `node_modules`. Check. If it's there and there are no errors, run `yarn run dev`. This will start listening for changes to css in the `src/scss/style.scss` file. This is sass, not regular css, but you can use that until you learn a little more :-)
+You can [download the latest version](https://github.com/getkirby/plainkit/archive/master.zip) of the Plainkit.  
+If you are familiar with Git, you can clone Kirby's Plainkit repository from Github.
 
-Email me if you have any issues.
+    git clone https://github.com/getkirby/plainkit.git
+
+## What's Kirby?
+- **[getkirby.com](https://getkirby.com)** – Get to know the CMS.
+- **[Try it](https://getkirby.com/try)** – Take a test ride with our online demo. Or download one of our kits to get started.
+- **[Documentation](https://getkirby.com/docs/guide)** – Read the official guide, reference and cookbook recipes.
+- **[Issues](https://github.com/getkirby/kirby/issues)** – Report bugs and other problems.
+- **[Feedback](https://feedback.getkirby.com)** – You have an idea for Kirby? Share it.
+- **[Forum](https://forum.getkirby.com)** – Whenever you get stuck, don't hesitate to reach out for questions and support.
+- **[Discord](https://chat.getkirby.com)** – Hang out and meet the community.
+- **[Twitter](https://twitter.com/getkirby)** – Spread the word.
+- **[Instagram](https://www.instagram.com/getkirby/)** – Share your creations: #madewithkirby.
+
+---
+
+© 2009-2020 Bastian Allgeier (Bastian Allgeier GmbH)  
+[getkirby.com](https://getkirby.com) · [License agreement](https://getkirby.com/license)
