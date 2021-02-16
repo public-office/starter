@@ -3,16 +3,15 @@
   "tasks": [
     {
       "type": "npm",
-      "script": "dev",
-      "problemMatcher": [],
       "label": "npm run dev",
+      "script": "dev",
       "runOptions": {
         "runOn": "folderOpen"
       }
     },
     {
-      "label": "composer start",
       "type": "shell",
+      "label": "composer start",
       "command": "composer start",
       "runOptions": {
         "runOn": "folderOpen"
