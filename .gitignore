@@ -18,7 +18,6 @@ Icon
 # ---------------
 *.sublime-project
 *.sublime-workspace
-/.vscode
 /.idea
 
 # -------------SECURITY-------------
