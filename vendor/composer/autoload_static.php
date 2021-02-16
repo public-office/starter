@@ -41,6 +41,10 @@ class ComposerStaticInit7a8df5c8dfe693f38f64ef3a7bfce4de
         array (
             'Kirby\\' => 6,
         ),
+        'B' => 
+        array (
+            'Bnomei\\' => 7,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -77,6 +81,10 @@ class ComposerStaticInit7a8df5c8dfe693f38f64ef3a7bfce4de
             0 => __DIR__ . '/../..' . '/kirby/src',
             1 => __DIR__ . '/..' . '/getkirby/composer-installer/src',
         ),
+        'Bnomei\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/site/plugins/kirby3-fingerprint/classes',
+        ),
     );
 
     public static $fallbackDirsPsr4 = array (
@@ -101,6 +109,8 @@ class ComposerStaticInit7a8df5c8dfe693f38f64ef3a7bfce4de
     );
 
     public static $classMap = array (
+        'Bnomei\\Fingerprint' => __DIR__ . '/../..' . '/site/plugins/kirby3-fingerprint/classes/Fingerprint.php',
+        'Bnomei\\FingerprintFile' => __DIR__ . '/../..' . '/site/plugins/kirby3-fingerprint/classes/FingerprintFile.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'Kirby\\Api\\Api' => __DIR__ . '/../..' . '/kirby/src/Api/Api.php',
         'Kirby\\Api\\Collection' => __DIR__ . '/../..' . '/kirby/src/Api/Collection.php',

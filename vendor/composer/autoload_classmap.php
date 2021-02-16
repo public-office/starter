@@ -6,6 +6,8 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Bnomei\\Fingerprint' => $baseDir . '/site/plugins/kirby3-fingerprint/classes/Fingerprint.php',
+    'Bnomei\\FingerprintFile' => $baseDir . '/site/plugins/kirby3-fingerprint/classes/FingerprintFile.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'Kirby\\Api\\Api' => $baseDir . '/kirby/src/Api/Api.php',
     'Kirby\\Api\\Collection' => $baseDir . '/kirby/src/Api/Collection.php',

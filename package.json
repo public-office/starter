@@ -1,12 +1,20 @@
 {
   "scripts": {
-    "dev": "parcel watch src/js/index.js --public-url /dist --out-file bundle.js",
-    "build": "parcel build src/js/index.js --public-url /dist --out-file bundle.js"
+    "dev": "parcel watch src/js/index.js --public-url /dist",
+    "build": "parcel build src/js/index.js --public-url /dist"
   },
   "dependencies": {
     "autoprefixer": "^10.2.4",
-    "parcel-bundler": "^1.12.4",
+    "parcel": "^2.0.0-nightly.596",
+    "postcss": "^8.2.6",
     "regenerator-runtime": "^0.13.7",
     "sass": "^1.32.7"
+  },
+  "devDependencies": {
+    "@parcel/optimizer-cssnano": "2.0.0-nightly.598",
+    "@parcel/packager-css": "2.0.0-nightly.598",
+    "@parcel/transformer-css": "2.0.0-nightly.598",
+    "@parcel/transformer-postcss": "2.0.0-nightly.598",
+    "@parcel/transformer-sass": "2.0.0-nightly.598"
   }
 }

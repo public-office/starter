@@ -30,11 +30,20 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '2f27ca2031d2ff715e71dc141849132785a9d358',
+    'reference' => '3f96d529e1f03636adf2dbd9984b4b2cefab8b92',
     'name' => 'getkirby/plainkit',
   ),
   'versions' => 
   array (
+    'bnomei/kirby3-fingerprint' => 
+    array (
+      'pretty_version' => '3.0.11',
+      'version' => '3.0.11.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '5444fdbed96b97a6766bd147d316925a053ac853',
+    ),
     'claviska/simpleimage' => 
     array (
       'pretty_version' => '3.5.1',
@@ -78,7 +87,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '2f27ca2031d2ff715e71dc141849132785a9d358',
+      'reference' => '3f96d529e1f03636adf2dbd9984b4b2cefab8b92',
     ),
     'laminas/laminas-escaper' => 
     array (
