@@ -1,0 +1,5 @@
+<?
+return [
+  'debug' => true
+]
+?>
