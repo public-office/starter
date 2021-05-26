@@ -165,44 +165,35 @@ section {
   padding: 1em;
   padding-bottom: 4em;
 }
-
 section.main {
   flex: 1.65;
 }
-
 section.library, section .people {
   flex: 1.1;
 }
-
 section.library ol, section .people ol {
   padding-top: 2.5em;
   max-width: 90%;
 }
-
 section.library ol li, section .people ol li {
   display: flex;
   flex-direction: row;
 }
-
-section.library ol li .number, section .people ol li .number {
-  display: inline-block;
-  padding-right: 0.5em;
-}
-
 section.library ol li:before, section .people ol li:before {
   counter-increment: library;
   content: counter(library, decimal-leading-zero) ". ";
   padding-right: 0.5em;
 }
-
-section.library ol li .title:before, section .people ol li .title:before {
+section.library ol li.number, section .people ol li.number {
+  display: inline-block;
+  padding-right: 0.5em;
+}
+section.library ol li.title:before, section .people ol li.title:before {
   content: "‘";
 }
-
-section.library ol li .title:after, section .people ol li .title:after {
+section.library ol li.title:after, section .people ol li.title:after {
   content: "’";
 }
-
 section.library ol li:hover span:not(.number), section .people ol li:hover span:not(.number) {
   color: yellow;
 }
