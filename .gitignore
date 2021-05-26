@@ -42,3 +42,5 @@ node_modules
 # License
 # ---------------
 /site/config/.license
+
+yarn-error.log
