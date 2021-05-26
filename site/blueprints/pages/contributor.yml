@@ -1,0 +1,10 @@
+title: Contributor
+preset: page
+pages: false
+fields:
+  bio:
+    label: Biography/CV
+    type: textarea
+  tags:
+    label: Tags
+    type: tags

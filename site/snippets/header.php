@@ -6,8 +6,9 @@
     <meta name="keywords" content="<?= $site->keywords() ?>">
     <title><?= $site->title() ?></title>
     <?= css('assets/css/style.css?v='.sha1_file('assets/css/style.css')) ?>
-    <?= js('assets/js/jquery.min.js') ?>
-    <?= js('assets/js/images.js') ?>
+    <?= js('assets/js/vendor/jquery.min.js') ?>
+    <?= js('assets/js/vendor/images.js') ?>
+    <?= js('assets/js/vendor/interact.min.js') ?>
     <?= js('assets/js/script.js?v='.sha1_file('assets/js/script.js')) ?>
   </head>
   <body>

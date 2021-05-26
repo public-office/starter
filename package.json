@@ -1,5 +1,5 @@
 {
-  "name": "Starter",
+  "name": "MeansOfProduction",
   "scripts": {
     "dev": "sass --watch src/scss/main.scss assets/css/style.css",
     "build": "sass src/scss/main.scss assets/css/style.css"

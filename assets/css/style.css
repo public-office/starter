@@ -1,17 +1,210 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Gestalt";
+  src: url("../type/Gestalt-Regular.woff");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gestalt";
+  src: url("../type/Gestalt-Italic.woff");
+  font-style: italic;
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   text-decoration: none;
+  color: black;
 }
 
 html {
-  font-size: 10px;
+  font-size: 0.7vw;
+  --large: 12.5rem;
+  --big: 6.4rem;
+  --main: 4.2rem;
+  --small: 2rem;
 }
 
 body {
+  background: #ccc;
+  font-family: "Gestalt";
   font-size: 1.6rem;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  counter-reset: library;
+  padding: 1em;
+}
+
+h1, h2, h3 {
+  font-size: var(--main);
+  font-weight: normal;
+  line-height: 0.9;
+  text-align: center;
+}
+
+h1 {
+  height: 100vh;
+  font-size: var(--large);
+  letter-spacing: -3px;
+  line-height: 0.75;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+}
+h1 .result {
+  font-size: var(--large) !important;
+  letter-spacing: -3px;
+  text-align: left;
+  line-height: 0.75;
+  display: inline;
+  color: yellow;
+}
+h1 .result:after {
+  content: ".";
+}
+h1 .result:not(:first-of-type) {
+  display: none;
+}
+
+h2 {
+  font-size: var(--large);
+  padding-bottom: 0.5em;
+}
+
+small {
+  font-size: var(--main);
+}
+
+p, .library ol li, .tag, .people-list span {
+  font-size: var(--main);
   line-height: 1.2;
+  text-indent: 0;
+}
+
+p + p, .library ol li + p, .tag + p, .people-list span + p {
+  text-indent: 2em;
+}
+
+.main p, .main span, .people p, .people span {
+  font-size: var(--big);
+  line-height: 1.1;
+}
+
+.people span:not(:last-of-type):after {
+  content: ", ";
+}
+
+#top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  mix-blend-mode: multiply;
+  z-index: 0;
+}
+#top .item {
+  touch-action: none;
+  box-sizing: border-box;
+}
+
+.head {
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  padding: 0.25em 0;
+  display: none;
+}
+
+.library {
+  padding-top: 8em;
+}
+
+.library-tags .tag span.active {
+  color: yellow;
+}
+
+.library-tags .tag:hover span {
+  cursor: pointer;
+  color: yellow;
+}
+
+.library-tags .tag sup {
+  font-size: var(--small);
+  line-height: 1;
+  padding-left: 0.15em;
+}
+
+.library-tags .tag:not(:last-of-type):after {
+  content: ", ";
+}
+
+.library-column {
+  display: flex;
+  flex-direction: row;
+}
+
+.library-column div {
+  flex: 1;
+}
+
+.library-column div:first-of-type {
+  padding-right: 1em;
+}
+
+li {
+  line-height: 1;
+}
+
+li:not(.active) {
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+section {
+  padding: 1em;
+  padding-bottom: 4em;
+}
+
+section.main {
+  flex: 1.65;
+}
+
+section.library, section .people {
+  flex: 1.1;
+}
+
+section.library ol, section .people ol {
+  padding-top: 2.5em;
+  max-width: 90%;
+}
+
+section.library ol li, section .people ol li {
+  display: flex;
+  flex-direction: row;
+}
+
+section.library ol li .number, section .people ol li .number {
+  display: inline-block;
+  padding-right: 0.5em;
+}
+
+section.library ol li:before, section .people ol li:before {
+  counter-increment: library;
+  content: counter(library, decimal-leading-zero) ". ";
+  padding-right: 0.5em;
+}
+
+section.library ol li .title:before, section .people ol li .title:before {
+  content: "‘";
+}
+
+section.library ol li .title:after, section .people ol li .title:after {
+  content: "’";
+}
+
+section.library ol li:hover span:not(.number), section .people ol li:hover span:not(.number) {
+  color: yellow;
 }
 
 /*# sourceMappingURL=style.css.map */

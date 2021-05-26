@@ -1,0 +1,6 @@
+title: Library
+sections:
+  publications:
+    label: Readings
+    type: pages
+    template: reading
