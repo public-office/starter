@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '205d24d8e060361b6847ee0127191d95ea44769a',
+    'reference' => 'a026920d2b20a642469e46464ac1d73464bd6ef5',
     'name' => 'getkirby/plainkit',
   ),
   'versions' => 
@@ -31,12 +31,12 @@
     ),
     'getkirby/cms' => 
     array (
-      'pretty_version' => '3.5.5',
-      'version' => '3.5.5.0',
+      'pretty_version' => '3.5.6',
+      'version' => '3.5.6.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'efe24a6ef4ad61010428b1cb725f8f97a633ff82',
+      'reference' => 'aadf1c2e6fafe9f6170d97c541e85fe3512c54ac',
     ),
     'getkirby/composer-installer' => 
     array (
@@ -54,7 +54,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '205d24d8e060361b6847ee0127191d95ea44769a',
+      'reference' => 'a026920d2b20a642469e46464ac1d73464bd6ef5',
     ),
     'laminas/laminas-escaper' => 
     array (

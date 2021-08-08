@@ -20,8 +20,6 @@ use Composer\Semver\VersionParser;
 
 
 
-
-
 class InstalledVersions
 {
 private static $installed = array (
@@ -32,7 +30,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '205d24d8e060361b6847ee0127191d95ea44769a',
+    'reference' => 'a026920d2b20a642469e46464ac1d73464bd6ef5',
     'name' => 'getkirby/plainkit',
   ),
   'versions' => 
@@ -57,12 +55,12 @@ private static $installed = array (
     ),
     'getkirby/cms' => 
     array (
-      'pretty_version' => '3.5.5',
-      'version' => '3.5.5.0',
+      'pretty_version' => '3.5.6',
+      'version' => '3.5.6.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'efe24a6ef4ad61010428b1cb725f8f97a633ff82',
+      'reference' => 'aadf1c2e6fafe9f6170d97c541e85fe3512c54ac',
     ),
     'getkirby/composer-installer' => 
     array (
@@ -80,7 +78,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '205d24d8e060361b6847ee0127191d95ea44769a',
+      'reference' => 'a026920d2b20a642469e46464ac1d73464bd6ef5',
     ),
     'laminas/laminas-escaper' => 
     array (
@@ -194,6 +192,7 @@ $packages = array();
 foreach (self::getInstalled() as $installed) {
 $packages[] = array_keys($installed['versions']);
 }
+
 
 if (1 === \count($packages)) {
 return $packages[0];
@@ -358,23 +357,9 @@ return $installed[0]['root'];
 
 
 
-
 public static function getRawData()
 {
-@trigger_error('getRawData only returns the first dataset loaded, which may not be what you expect. Use getAllRawData() instead which returns all datasets for all autoloaders present in the process.', E_USER_DEPRECATED);
-
 return self::$installed;
-}
-
-
-
-
-
-
-
-public static function getAllRawData()
-{
-return self::getInstalled();
 }
 
 
@@ -404,7 +389,6 @@ self::$installedByVendor = array();
 
 
 
-
 private static function getInstalled()
 {
 if (null === self::$canGetVendors) {
@@ -414,6 +398,7 @@ self::$canGetVendors = method_exists('Composer\Autoload\ClassLoader', 'getRegist
 $installed = array();
 
 if (self::$canGetVendors) {
+
 foreach (ClassLoader::getRegisteredLoaders() as $vendorDir => $loader) {
 if (isset(self::$installedByVendor[$vendorDir])) {
 $installed[] = self::$installedByVendor[$vendorDir];

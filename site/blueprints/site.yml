@@ -3,6 +3,7 @@ preset: pages
 unlisted: true
 sections:
   meta:
+    type: fields
     description:
       label: Description (seo)
       type: text
