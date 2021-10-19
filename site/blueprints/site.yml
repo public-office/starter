@@ -4,11 +4,16 @@ unlisted: true
 sections:
   meta:
     type: fields
-    description:
-      label: Description (seo)
-      type: text
-      width: 1/2
-    keywords:
-      label: Keywords (seo)
-      type: text
-      width: 1/2
+    fields:
+      description:
+        label: Description (seo)
+        type: text
+        width: 1/2
+      keywords:
+        label: Keywords (seo)
+        type: text
+        width: 1/2
+  pages:
+    headline: Pages
+    type: pages
+    status: all
